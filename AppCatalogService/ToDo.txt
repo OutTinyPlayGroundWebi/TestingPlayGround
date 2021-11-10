@@ -1,0 +1,7 @@
+1) gRPC Exception handling
+2) gRPC within Clean Architecture Concept. Service should be(?) in application but proto in presentation 
+   layer, but service has dependency on proto. They are co-dependend -> against clean architecture
+   dependency strategy
+
+   3) For Fluent Validator and EF Core Configuration allignments to UnitTests : https://blog.joaograssi.com/unit-testing-fluent-validation-rules-against-your-ef-core-model/
+
