@@ -17,11 +17,11 @@
   <ItemGroup>
     <Folder Include="Common\Exceptions\" />
     <Folder Include="Common\Models\" />
-    <Folder Include="Services\Example\Commands\Delete\" />
-    <Folder Include="Services\Example\Commands\Update\" />
-    <Folder Include="Services\Example\Specifications\" />
-    <Folder Include="Services\Example\Queries\GetList\" />
-    <Folder Include="Services\Example\Queries\Get\" />
+    <Folder Include="Services\ApplicationEntity\Commands\Delete\" />
+    <Folder Include="Services\ApplicationEntity\Commands\Update\" />
+    <Folder Include="Services\ApplicationEntity\Specifications\" />
+    <Folder Include="Services\ApplicationEntity\Queries\GetList\" />
+    <Folder Include="Services\ApplicationEntity\Queries\Get\" />
   </ItemGroup>
 
   <ItemGroup>

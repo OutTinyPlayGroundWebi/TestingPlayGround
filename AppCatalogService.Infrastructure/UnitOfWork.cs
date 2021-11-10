@@ -12,27 +12,27 @@ namespace AppCatalogService.Infrastructure
 {
     public class UnitOfWork : IUnitOfWork
     {
-        private readonly ExampleDbContext _exampleDbContext;
+        private readonly AppCatalogDbContext _appCatalogDbContext;
 
-        public IRepository<ExampleEntity> ExampleRepositoryAlt { get; }
+        public IRepository<ApplicationEntity> ApplicationEntityRepositoryAlt { get; }
 
-        public IExampleRepository ExampleRepository { get; }
+        public IApplicationEntityRepository ApplicationEntityRepository { get; }
 
         public UnitOfWork(
-            ExampleDbContext exampleDbContext,
-            IRepository<ExampleEntity> exampleRepositoryAlt,
-            IExampleRepository exampleRepository
+            AppCatalogDbContext appCatalogDbContext,
+            IRepository<ApplicationEntity> applicationEntityAlt,
+            IApplicationEntityRepository applicationEntityRepository
             )
         {
-            _exampleDbContext = exampleDbContext;
-            ExampleRepositoryAlt = exampleRepositoryAlt;
-            ExampleRepository = exampleRepository;
+            _appCatalogDbContext = appCatalogDbContext;
+            ApplicationEntityRepositoryAlt = applicationEntityAlt;
+            ApplicationEntityRepository = applicationEntityRepository;
         }
 
         public async Task<int> Complete(CancellationToken cancellationToken = default)
         {
             //Because we only have 1 Db Context, otherwise transactionism
-            return await _exampleDbContext.SaveChangesAsync(cancellationToken);
+            return await _appCatalogDbContext.SaveChangesAsync(cancellationToken);
         }
 
     }

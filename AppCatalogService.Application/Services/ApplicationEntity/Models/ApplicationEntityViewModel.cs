@@ -7,13 +7,13 @@ using AutoMapper;
 
 namespace AppCatalogService.Core.Application.Services.Example
 {
-    public class ExampleEntityViewModel : IMapFrom<ExampleEntity>
+    public class ApplicationEntityViewModel : IMapFrom<ApplicationEntity>
     {
         //ToDo: Properties here
 
         public void Mapping(Profile profile)
         {
-            profile.CreateMap<Domain.Entities.ExampleEntity, ExampleEntityViewModel>();
+            profile.CreateMap<ApplicationEntity, ApplicationEntityViewModel>();
         }
     }
 }

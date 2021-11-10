@@ -9,13 +9,13 @@ using System.Threading.Tasks;
 
 namespace AppCatalogService.Infrastructure.Data
 {
-    public class ExampleDbContext : DbContext
+    public class AppCatalogDbContext : DbContext
     {
-        public ExampleDbContext(DbContextOptions<ExampleDbContext> options) : base(options)
+        public AppCatalogDbContext(DbContextOptions<AppCatalogDbContext> options) : base(options)
         {
         }
 
-        public DbSet<ExampleEntity> ExampleEntities { get; set; }
+        public DbSet<ApplicationEntity> Applications { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

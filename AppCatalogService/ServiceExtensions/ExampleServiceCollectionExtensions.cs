@@ -31,14 +31,14 @@ namespace AppCatalogService.Api.ServiceExtensions
         public static void AddInfrastructure(this IServiceCollection serviceCollection, IConfiguration configuration)
         {
            
-            serviceCollection.AddDbContext<ExampleDbContext>(options =>
+            serviceCollection.AddDbContext<AppCatalogDbContext>(options =>
                 options.UseSqlServer(configuration.GetConnectionString("DbConnectionString")));
 
-            serviceCollection.AddScoped<ExampleDbContext>(provider => provider.GetService<ExampleDbContext>());
+            serviceCollection.AddScoped<AppCatalogDbContext>(provider => provider.GetService<AppCatalogDbContext>());
 
             #region Repositories
             serviceCollection.AddScoped(typeof(IRepository<>), typeof(EfBaseRepository<>));
-            serviceCollection.AddScoped(typeof(IExampleRepository), typeof(ExampleRepository));
+            serviceCollection.AddScoped(typeof(IApplicationEntityRepository), typeof(ApplicationEntityRepository));
             #endregion
             serviceCollection.AddScoped<IUnitOfWork, UnitOfWork>();
         }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 namespace AppCatalogService.Core.Application.Common.Validators
 {
 
-    public class ExampleValidator<T, TProperty> : AsyncPropertyValidator<T, TProperty>
+    public class ApplicationEntityValidator<T, TProperty> : AsyncPropertyValidator<T, TProperty>
     {
         public override string Name => "ExampleValidatorValidator";
 

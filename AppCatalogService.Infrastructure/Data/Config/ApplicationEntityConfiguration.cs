@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace AppCatalogService.Infrastructure.Data.Config
 {
-    public class ExampleEntityConfiguration : IEntityTypeConfiguration<ExampleEntity>
+    public class ExampleEntityConfiguration : IEntityTypeConfiguration<ApplicationEntity>
     {
-        public void Configure(EntityTypeBuilder<ExampleEntity> builder)
+        public void Configure(EntityTypeBuilder<ApplicationEntity> builder)
         {
             //ToDo
             //Example Configuration below

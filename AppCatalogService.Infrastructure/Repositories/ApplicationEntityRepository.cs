@@ -10,9 +10,9 @@ using System.Threading.Tasks;
 
 namespace AppCatalogService.Infrastructure.Repositories
 {
-    public class ExampleRepository : EfBaseRepository<ExampleEntity>, IExampleRepository
+    public class ApplicationEntityRepository : EfBaseRepository<ApplicationEntity>, IApplicationEntityRepository
     {
-        public ExampleRepository(ExampleDbContext dbContext) : base(dbContext)
+        public ApplicationEntityRepository(AppCatalogDbContext dbContext) : base(dbContext)
         {
         }
         //ToDo: 

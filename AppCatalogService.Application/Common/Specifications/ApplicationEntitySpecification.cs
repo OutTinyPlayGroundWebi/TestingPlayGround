@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace AppCatalogService.Core.Application.Common.Specifications
 {
-    public class ExampleEntitySpecification : Specification<ExampleEntity>
+    public class ApplicationEntitySpecification : Specification<ApplicationEntity>
     {
-        public ExampleEntitySpecification(int skip, int take, string elasticSearchKeyWord, string filterFirstName, string filterLastName, string filterIdentCode, DateTime? filterBirthDate, string cityFilter, string genderFilter, string phoneFilter)
+        public ApplicationEntitySpecification(int skip, int take, string elasticSearchKeyWord, string filterFirstName, string filterLastName, string filterIdentCode, DateTime? filterBirthDate, string cityFilter, string genderFilter, string phoneFilter)
            : base()
         {
             //ToDo:
@@ -33,8 +33,8 @@ namespace AppCatalogService.Core.Application.Common.Specifications
     #region ExampleEntitySpecificationExtensions
     public static class ExampleEntitySpecificationExtensions
     {
-        public static ISpecificationBuilder<ExampleEntity> FirstNameFilter(
-            this ISpecificationBuilder<ExampleEntity> specificationBuilder, string searchKeyWord)
+        public static ISpecificationBuilder<Domain.Entities.ApplicationEntity> FirstNameFilter(
+            this ISpecificationBuilder<Domain.Entities.ApplicationEntity> specificationBuilder, string searchKeyWord)
         {
             //ToDo:
             //Example Code Below

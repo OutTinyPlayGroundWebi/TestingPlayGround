@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace AppCatalogService.Core.Domain.Entities
 {
-    public class ExampleEntity : BaseEntity, IAggregateRoot
+    public class ApplicationEntity : BaseEntity, IAggregateRoot
     {
 
     }

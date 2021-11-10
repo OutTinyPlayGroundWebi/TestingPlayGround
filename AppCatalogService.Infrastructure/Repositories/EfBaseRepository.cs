@@ -13,7 +13,7 @@ namespace AppCatalogService.Infrastructure.Repositories
 {
     public class EfBaseRepository<T> : RepositoryBase<T>, IRepository<T> where T : BaseEntity, IAggregateRoot
     {
-        public EfBaseRepository(ExampleDbContext dbContext) : base(dbContext)
+        public EfBaseRepository(AppCatalogDbContext dbContext) : base(dbContext)
         {
         }
     }

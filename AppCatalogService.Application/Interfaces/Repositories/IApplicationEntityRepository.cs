@@ -5,7 +5,7 @@ using Ardalis.Specification;
 
 namespace AppCatalogService.Core.Application.Interfaces
 {
-    public interface IExampleRepository : IRepository<ExampleEntity>
+    public interface IApplicationEntityRepository : IRepository<ApplicationEntity>
     {
         //Example Additional Methods here
     }
